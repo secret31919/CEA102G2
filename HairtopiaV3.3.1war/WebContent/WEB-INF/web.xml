@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>HairtopiaV2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>  
+    <servlet-name>LecturerServlet</servlet-name>
+    <servlet-class>com.lecturer.controller.LecturerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LecturerServlet</servlet-name>
+    <url-pattern>/lecturer/lecturer.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>FuncServlet</servlet-name>
+    <servlet-class>com.func.controller.FuncServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FuncServlet</servlet-name>
+    <url-pattern>/func/func.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>StaffServlet</servlet-name>
+    <servlet-class>com.staff.controller.StaffServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StaffServlet</servlet-name>
+    <url-pattern>/staff/staff.do</url-pattern>
+  </servlet-mapping>
+  
+  	 <servlet>
+    <servlet-name>AuthorityServlet</servlet-name>
+    <servlet-class>com.authority.controller.AuthorityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthorityServlet</servlet-name>
+    <url-pattern>/authority/authority.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ScheduleServlet</servlet-name>
+    <servlet-class>com.schedule.controller.ScheduleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScheduleServlet</servlet-name>
+    <url-pattern>/schedule/schedule.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>TrendServlet</servlet-name>
+    <servlet-class>com.trend.controller.TrendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrendServlet</servlet-name>
+    <url-pattern>/trend/trend.do</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>PostServlet</servlet-name>
+    <servlet-class>com.post.controller.PostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostServlet</servlet-name>
+    <url-pattern>/post/post.do</url-pattern>
+  </servlet-mapping>
+</web-app>
